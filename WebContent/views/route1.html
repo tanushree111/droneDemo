@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+html, body {
+width: 99%;
+height: 87%;
+}
+
+div#shell {
+position: relative;
+height: 96;
+width: 80%;
+background: white;
+margin-left: 139px;
+border: 1px solid green;
+}
+
+.tdata {
+border: 1px solid;
+width: 100px;
+height: 100px;
+position: absolute;
+}
+
+/* table {
+margin-left: 139px;
+} */
+
+td {
+border: 1px solid;
+width: 200px;
+height: 200px;
+border-color: green;
+/* margin-left: 32px; */
+z-index: 1;
+background: #F3FFED;
+}
+
+div#obj1_grid1 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("exit.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+top: 11%;
+left: 2%;
+z-index: 1;
+}
+
+div#obj2_grid1 {
+position: absolute;
+width: 0.2%;
+height: 79%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: -24%;
+left: 25.9%;
+-webkit-transform: rotate(-90deg);
+}
+
+div#obj1_grid2 {
+position: absolute;
+width: 7%;
+height: 6%;
+/* background: blueviolet; */
+border-radius: 63px;
+top: 7%;
+left: 20%;
+z-index: 1;
+}
+
+div#obj1_grid3 {
+position: absolute;
+width: 7%;
+height: 6%;
+/* background: blueviolet; */
+border-radius: 63px;
+top: 32%;
+left: 26%;
+z-index: 1;
+}
+
+div#obj3_grid3 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("person1.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+top: 7%;
+left: 43%;
+z-index: 1;
+}
+
+div#obj4_grid3 {
+position: absolute;
+width: 0.2%;
+height: 40%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 14%;
+left: 40.3%;
+-webkit-transform: rotate(26deg);
+}
+
+div#obj5_grid3 {
+position: absolute;
+width: 0.2%;
+height: 18%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 3.5%;
+left: 50.5%;
+-webkit-transform: rotate(72deg);
+}
+
+div#obj6_grid3 {
+position: absolute;
+width: 0.2%;
+height: 63%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 3%;
+left: 66.3%;
+-webkit-transform: rotate(-45deg);
+}
+
+div#obj1_grid4 {
+position: absolute;
+width: 4%;
+height: 10%;
+/* background: blueviolet; */
+background: url("gas_cylinder.jpg");
+background-repeat: no-repeat;
+background-origin: center;
+border-radius: 63px;
+top: 3%;
+left: 53%;
+z-index: 7;
+background-size: cover;
+}
+
+
+div#obj2_grid4 {
+position: absolute;
+width: 0.2%;
+height: 57%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 1%;
+left: 45.9%;
+-webkit-transform: rotate(41deg);
+}
+
+div#obj3_grid4 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("fire.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 32px;
+top: 11%;
+left: 59%;
+z-index: 1;
+}
+
+div#obj1_grid5 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("fire.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+top: 38%;
+left: 56%;
+z-index: 1;
+}
+
+
+
+div#obj1_grid8 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("person1.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+border-radius: 63px;
+top: 49%;
+left: 34%;
+z-index: 1;
+}
+
+div#obj2_grid8 {
+position: absolute;
+width: 0.2%;
+height: 76%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 17%;
+left: 56.9%;
+-webkit-transform: rotate(90deg);
+}
+
+div#obj1_grid9 {
+position: absolute;
+width: 7%;
+height: 6%;
+/* background: blueviolet; */
+border-radius: 63px;
+top: 49%;
+left: 51%;
+z-index: 1
+}
+
+div#obj1_grid10 {
+position: absolute;
+width: 0.2%;
+height: 38%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 10%;
+left: 51.9%;
+-webkit-transform: rotate(-41deg);
+}
+
+div#obj2_grid10 {
+position: absolute;
+width: 0.2%;
+height: 42%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 27%;
+left: 66.9%;
+-webkit-transform: rotate(110deg);
+}
+
+div#obj3_grid10 {
+position: absolute;
+width: 0.2%;
+height: 43%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 26%;
+left: 46.9%;
+-webkit-transform: rotate(71deg);
+}
+
+div#obj1_grid11 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("person1.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+border-radius: 63px;
+top: 50%;
+left: 74%;
+z-index: 1;
+}
+
+div#obj2_grid11 {
+position: absolute;
+width: 0.2%;
+height: 36%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 50%;
+left: 84.9%;
+-webkit-transform: rotate(125deg);
+}
+
+div#obj3_grid11 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("fire.png");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+top: 78%;
+left: 23%;
+z-index: 1;
+}
+
+
+div#obj1_grid18 {
+position: absolute;
+width: 5%;
+height: 10%;
+background: url("exit.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 63px;
+top: 77%;
+left: 92%;
+z-index: 1;
+}
+
+div#obj2_grid18 {
+position: absolute;
+width: 0.2%;
+height: 7%;
+background: black;
+/* border-radius: 63px; */
+border: 1px solid;
+top: 76%;
+left: 96.7%;
+-webkit-transform: rotate(90deg);
+}
+
+div#obj3_grid18 {
+position: absolute;
+width: 7%;
+height: 6%;
+/* background: blueviolet; */
+border-radius: 63px;
+top: 66%;
+left: 89%;
+z-index: 1
+}
+
+
+div.callout {
+	height: 106px;
+	width: 38%;
+	background-color: #444;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: #ccc;
+	padding: 10px;
+	/* border-radius: 10px; */
+	/* box-shadow: 0px 0px 20px #999; */
+	margin: 25px;
+	min-height: 50px;
+	/* border: 1px solid #333; */
+	text-shadow: 0 0 1px #000;
+	font-family: sans-serif;
+	font-size: 13px;
+	border-color: white;
+	z-index: 5;
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid #444;
+}
+
+.callout.left1::before {
+	right: -30px;
+	top: 60%;
+	border-left: 20px solid yellowgreen;
+}
+
+.callout.right1::before {
+	left: -30px;
+	top: 60%;
+	border-right: 20px solid yellowgreen;
+}
+
+.callout.left2::before {
+	right: -30px;
+	top: 60%;
+	border-left: 20px solid blue;
+}
+
+.callout.right2::before {
+	left: -30px;
+	top: 60%;
+	border-right: 20px solid rgb(51,51,51);
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+div#cal1 {
+position: absolute;
+left: 4.4%;
+top: 3%;
+height: 9%;
+width: 22%;
+background-color: yellowgreen;
+fill: solid;
+stroke: none;
+opacity: 0.9;
+color: black;
+font-family: monospace;
+}
+
+div#cal2 {
+position: absolute;
+left: 65.4%;
+top: 70%;
+height: 9%;
+width: 22%;
+background-color: yellowgreen;
+fill: solid;
+stroke: none;
+opacity: 0.9;
+color: black;
+font-family: monospace;
+}
+
+img#direction {
+height: 26px;
+width: 38px;
+position: absolute;
+top: 87px;
+left: 133px;
+}
+
+img#direction1 {
+height: 26px;
+width: 38px;
+position: absolute;
+top: 340px;
+left: 703px;
+}
+
+
+
+</style>
+
+<script src="http://www.google.com/jsapi"></script>
+<script>
+ google.load("jquery", "1.7.1");
+ // var baseurl = 'http://india60.com/mps';
+ </script>
+
+<script>
+
+$(function () {
+	
+	var cal1 = $('#cal1');
+	cal1.hide();
+	
+	var cal2 = $('#cal2');
+	cal2.hide();
+	
+	
+	//cylinder lines
+	var cylinder_line1 = $('#obj5_grid3');
+	cylinder_line1.hide();
+	
+	var cylinder_line2 = $('#obj6_grid3');
+	cylinder_line2.hide();
+	
+	var cylinder_line3 = $('#obj2_grid4');
+	cylinder_line3.hide();
+
+	//fire lines
+	var fire_line1 = $('#obj1_grid10');
+	fire_line1.hide();
+	
+	var fire_line2 = $('#obj2_grid10');
+	fire_line2.hide();
+	
+	var fire_line3 = $('#obj3_grid10');
+	fire_line3.hide();
+
+	$("#obj1_grid5").hover(
+            function(event) {
+            	
+            	fire_line1.show();
+            	fire_line2.show();
+            	fire_line3.show();
+            	
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+            	fire_line1.hide();
+            	fire_line2.hide();
+            	fire_line3.hide();
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+
+	$("#obj1_grid4").hover(
+            function(event) {
+            	
+            	cylinder_line1.show();
+            	cylinder_line2.show();
+            	cylinder_line3.show();
+            	
+                    $(this).animate({
+                    	width: '4.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+            	cylinder_line1.hide();
+            	cylinder_line2.hide();
+            	cylinder_line3.hide();
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '4%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	
+	
+	
+	$("#obj1_grid1").hover(
+            function(event) {
+            	
+            	cal1.show();
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+            	cal1.hide();
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	$("#obj3_grid3").hover(
+            function(event) {
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	$("#obj1_grid8").hover(
+            function(event) {
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	$("#obj1_grid11").hover(
+            function(event) {
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	$("#obj1_grid18").hover(
+            function(event) {
+            	cal2.show();
+                    $(this).animate({
+                    	width: '5.5%',
+                        height: '10.5%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+
+            },
+            function() {
+            	cal2.hide();
+                   $(this).stop(true, true);
+                    $(this).animate({
+                    	width: '5%',
+                        height: '10%'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	
+});
+
+
+</script>
+
+
+</head>
+<body>
+
+<div id = "shell">
+
+<table style="padding: 10px;">
+ <tr>
+    <td style="background: #79C255;">
+    <img id = "direction" alt="" src="right_arrow1.png">
+    <div id = "obj1_grid1"></div>
+    <div id = "obj2_grid1"></div>
+    <div id = "cal1" class= "callout right1">Safe Entry Point-<br> Metallic Door - 10 feet * 8 feet <br> Nearest Fire point 12 feet Away</div>
+    
+    
+    </td>
+    
+    
+    <td>
+    <div id = "obj1_grid2"><h3 style="margin-top: 31px;">10 Feet</h3>
+    </div>
+    </td> 
+    <td style="background: #79C255;">
+   <!--  <div id = "obj1_grid3"><h3>5 Feet</h3></div> -->
+    <div id = "obj3_grid3"></div>
+    <div id = "obj4_grid3"><h3 style="margin-left: -63px;margin-top: 97px;width: 100px;-webkit-transform: rotate(-89deg);">6 Feet</h3></div>
+    <div id = "obj5_grid3"><h3 style="margin-top: 30px;width: 100px;margin-left: -64px;-webkit-transform: rotate(270deg);">2 Feet</h3></div>
+    <div id = "obj6_grid3"><h3 style="margin-left: 13px; margin-top: 207px;">8 Feet</h3></div>
+    </td>
+    <td>
+    <div id = "obj1_grid4"></div>
+    <div id = "obj2_grid4"><h3 style="margin-left: 13px; margin-top: 207px;">7 Feet</h3></div>
+    <div id = "obj3_grid4"></div>
+    </td>
+    <td>
+     <div id = "obj1_grid5"></div>
+    </td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td style="background: #79C255;">
+     <div id = "obj1_grid8"></div>
+    <div id = "obj2_grid8"></div>
+    
+    
+    </td> 
+    <td>
+    <div id = "obj1_grid9"><h3>10 Feet</h3></div>
+    </td>
+    <td>
+    <div id = "obj1_grid10"><h3  style="margin-left: -38px;margin-top: 92px;">7 Feet</h3></div>
+    <div id = "obj2_grid10"><h3 style="margin-top: 80px;width: 100px;margin-left: -68px;-webkit-transform: rotate(270deg);">4 Feet</h3></div>
+    <div id = "obj3_grid10"><h3 style="margin-left: -39px; margin-top: 103px;">5 Feet</h3></div>
+    <img id = "direction1" alt="" src="right_arrow1.png">
+    
+    </td>
+    <td style="background: #79C255;">
+      <div id = "obj1_grid11"></div>
+    <div id = "obj2_grid11"></div>
+    <div id = "obj3_grid11"></div>
+    </td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td> 
+    <td></td>
+    <td></td>
+    <td></td> 
+    <td style="background: #79C255;">
+      <div id = "obj1_grid18"></div>
+      <div id = "obj2_grid18"></div>
+      <div id = "cal2" class= "callout left1">Safe Exit Point-<br> Metallic Door - 10 feet * 6 feet <br> Nearest Fire point 12 feet Away</div>
+      <div id = "obj3_grid18"><h3>5 Feet</h3></div>
+    
+    </td>
+  </tr>
+
+  
+
+
+</table>
+
+
+
+</div>
+
+
+
+</body>
+</html>

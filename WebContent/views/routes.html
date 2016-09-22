@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://www.google.com/jsapi"></script>
+<script>
+ google.load("jquery", "1.7.1");
+ </script>
+
+<style>
+h3 {
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+color :black;
+font-size: 1em;
+
+}
+
+h1 {
+width: 41px;
+height: -5px;
+margin-top: -41px;
+float: right;
+margin-right: 26px;
+/* margin-bottom: -8px; */
+/* text-align: start; */
+font-family: 'Montserrat', sans-serif;
+
+color: rgb(10, 198, 10);
+font-size: large;
+}
+
+h4 {
+height: 10px;
+width: 169px;
+/* text-align: left; */
+margin-left: 59px;
+/* float: right; */
+margin-top: -27px;
+font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+color: rgb(10, 198, 10);
+}
+
+.tul1 {
+	margin-top: 10px;
+}
+
+.tl1 {
+	list-style-type: none;
+	background-color: #F3FFED;
+	height: 82px;
+	/* border-bottom: bisque; */
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-style: groove;
+	border-radius: 8px;
+	width: 98%;
+}
+
+.tl2 {
+	list-style-type: none;
+	background-color: #fff;
+	/* border-bottom: bisque; */
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-style: groove;
+	width: 98%;
+	height: 60px;
+	border-radius: 8px;
+	margin-left: 0%;
+}
+</style>
+
+<script>
+$(function () {
+	
+	 $('#uul1').hide();
+	 $('#uul2').hide();
+	 $('#uul3').hide();
+	 $('#uul4').hide();
+	
+	$("#li1").hover(
+            function(event) {
+            	$(this).stop(true, true);
+                    $(this).animate({
+                          height : '200px',
+                          //width  : '500px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+                   $('#uul1').show();
+                   $('#limg1').hide();
+
+            },
+            function() {
+            	   
+                   $(this).stop(true, true);
+                   $('#uul1').hide();
+                   $('#limg1').show();
+                    $(this).animate({
+                          height : '82px',
+                          //width  : '100px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+                  
+
+            });
+	
+	$("#li2").hover(
+            function(event) {
+            	$(this).stop(true, true);
+                    $(this).animate({
+                          height : '200px',
+                          //width  : '500px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+                   $('#uul2').show();
+                   $('#limg2').hide();
+            },
+            function() {
+                   $(this).stop(true, true);
+                   $('#uul2').hide();
+                   $('#limg2').show();
+                    $(this).animate({
+                          height : '82px',
+                          //width  : '100px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	
+	$("#li3").hover(
+            function(event) {
+            	$(this).stop(true, true);
+                    $(this).animate({
+                          height : '200px',
+                          //width  : '500px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+                   
+                   $('#uul3').show();
+                   $('#limg3').hide();
+                   
+                   
+
+            },
+            function() {
+                   $(this).stop(true, true);
+                   $('#uul3').hide();
+                   $('#limg3').show();
+                    $(this).animate({
+                          height : '82px',
+                          //width  : '100px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	
+	$("#li4").hover(
+            function(event) {
+            	$(this).stop(true, true);
+                    $(this).animate({
+                          height : '200px',
+                          //width  : '500px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 12px rgba(0, 0, 0, 0.5)"
+                                 });
+                   $('#uul4').show();
+                   $('#limg4').hide();
+
+            },
+            function() {
+                   $(this).stop(true, true);
+                   $('#uul4').hide();
+                   $('#limg4').show();
+                    $(this).animate({
+                          height : '82px',
+                          //width  : '100px'
+                   }); 
+                   $(this)
+                   .css(
+                                 {
+                                        "-webkit-box-shadow" : " 0px 0px 0px rgba(0, 0, 0, 0)"
+                                 });
+
+            });
+	
+	$("#uli1").hover(
+            function(event) {
+                  $(this)
+                   .css(
+                                 {
+                                	 "background-color" : "rgb(218, 232, 223)"
+                                 });
+
+            },
+            function() {
+                $(this)
+                   .css(
+                                 {
+                                	 "background-color" : "#fff"
+                                 });
+
+            });
+	
+	$("#uli2").hover(
+            function(event) {
+                  $(this)
+                   .css(
+                                 {
+                                	 "background-color" : "rgb(218, 232, 223)"
+                                 });
+
+            },
+            function() {
+                $(this)
+                   .css(
+                                 {
+                                	 "background-color" : "#fff"
+                                 });
+
+            });
+	
+});
+</script>
+
+</head>
+<body style="width: 98%; height: 100%">
+	<div style="padding-top: 9px; padding-left: 10px;">
+		<ul id="ul1" style="
+    -webkit-margin-before: 0em;  
+    -webkit-margin-after: 0em;  -webkit-margin-start: 0px;  -webkit-margin-end: 0px;  
+    -webkit-padding-start: 0px;">
+			<li id="li1" class="tl1">
+                <h3>Pathway:- From EXIT1 To GRID1</h3>
+                <h1>30 Feet</h1>
+                <img id = "limg1" alt="" src="../image/down1.png" style="width: 26px;height: 20px;">
+				<ul id="uul1" class="tul1">
+					<li id = "uli1" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					
+					</li>
+					<li id = "uli2" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					</li>
+				</ul>
+
+			<!-- 				<h1 id = "extra">ONLY GREAT CAN VIEW</h1> -->
+
+
+			</li>
+			<li id="li2" class="tl1">
+			<h3>Pathway:- From GRID1 To GRID5</h3>
+			<h1>30 Feet</h1>
+			<img id = "limg2" alt="" src="../image/down1.png" style="width: 26px;height: 20px;">
+			
+			<ul id="uul2" class="tul1">
+					<li id = "uli1" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					
+					</li>
+					<li id = "uli2" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					</li>
+				</ul>
+			</li>
+			<li id="li3" class="tl1">
+			<h3>Pathway:- From GRID5 To GRID7</h3>
+			<h1>30 Feet</h1>
+			<img id = "limg3" alt="" src="../image/down1.png" style="width: 26px;height: 20px;">
+			
+			<ul id="uul3" class="tul1">
+					<li id = "uli1" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					
+					</li>
+					<li id = "uli2" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					</li>
+				</ul>
+			</li>
+			<li id="li4" class="tl1">
+			<h3>Pathway:- From GRID7 To EXIT2</h3>
+			<h1>30 Feet</h1>
+			<img id = "limg4" alt="" src="../image/down1.png" style="width: 26px;height: 20px;">
+			<ul id="uul4" class="tul1">
+					<li id = "uli1" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					
+					</li>
+					<li id = "uli2" class="tl2">
+					<img alt="" src="../image/right.png" style="width: 46px;height: 36px;margin-top: 8px;">
+					<h4>Go 30feet straight</h4>
+					</li>
+				</ul>
+				</li>
+		</ul>
+	</div>
+</body>
+</html>

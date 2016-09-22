@@ -1,0 +1,223 @@
+.demo-wrapper {
+	width: 270px;
+	margin: 30px auto 0;
+	position: absolute;
+	top: 324px;
+	left: 650px;
+}
+
+.progress-bar-wrapper{
+}
+
+
+.html5-progress-bar {
+	padding: 5px 2px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, .2);
+}
+.html5-progress-bar progress {
+	background-color: #f3f3f3;
+	border: 0;
+	width: 80%;
+	height: 18px;
+	border-radius: 9px;
+}
+.html5-progress-bar progress::-webkit-progress-bar {
+	background-color: green;
+	border-radius: 9px;
+}
+.html5-progress-bar progress::-webkit-progress-value {
+	background: #79C255;
+	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956));
+	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	border-radius: 9px;
+}
+.html5-progress-bar progress::-moz-progress-bar {
+	background: #79C255;
+	background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956));
+	background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%);
+	background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	border-radius: 9px;
+}
+.html5-progress-bar .progress-value {
+	padding: 0px 5px;
+	line-height: 20px;
+	margin-left: 5px;
+	font-size: .8em;
+	color: #555;
+	height: 18px;
+	float: right;
+}
+
+#tabs,#tabs1 {
+	overflow: auto;
+	width: 200%;
+	list-style: none;
+}
+
+#tabs li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 25%;
+}
+
+#tabs1 li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 16%;
+}
+
+#tabs a {
+	width: 85%;
+	-moz-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	-webkit-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	background: #79C255;
+	background: -moz-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -o-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+	color: #fff;
+	float: left;
+	font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+	height: 35px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+#tabs1 a {
+	width: 75%;
+	-moz-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	-webkit-box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+	background: #79C255;
+	background: -moz-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: -o-linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	background: linear-gradient(220deg, transparent 10px, #79C255
+		10px);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+	color: #fff;
+	float: left;
+	font: bold 12px/35px 'Lucida sans', Arial, Helvetica;
+	height: 35px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+#tabs a:hover,#tabs1 a:hover {
+	background: rgb(244, 196, 48);
+	background: -moz-linear-gradient(220deg, transparent 10px, rgb(19, 136, 8)
+		10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, rgb(19, 136, 8)
+		10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, rgb(19, 136, 8)
+		10px);
+	background: -o-linear-gradient(220deg, transparent 10px, rgb(19, 136, 8)
+		10px);
+	background: linear-gradient(220deg, transparent 10px, rgb(19, 136, 8)
+		10px);
+}
+
+#tabs a:focus,#tabs1 a:focus {
+	outline: 0;
+}
+
+#tabs #current a,#tabs1 #current a {
+	background: #DCF5CF;
+	background: -moz-linear-gradient(220deg, transparent 10px, #DCF5CF 10px);
+	background: -webkit-linear-gradient(220deg, transparent 10px, #DCF5CF 10px);
+	background: -ms-linear-gradient(220deg, transparent 10px, #DCF5CF 10px);
+	background: -o-linear-gradient(220deg, transparent 10px, #DCF5CF 10px);
+	background: linear-gradient(220deg, transparent 10px, #DCF5CF 10px);
+	text-shadow: none;
+	color: #333;
+}
+#footer
+{
+background: white;
+/* display: inline-flex; */
+/* bottom: 1%; */
+/* float: left; */
+width: 79.9%;
+margin-left: 12%;
+height: 5.5%;
+}
+
+
+/* Side bar page - country_list  */
+#list{
+width: 100%;
+height: 97%;
+}
+
+.element {
+position:relative;
+top:2px;
+background: dodgerblue;
+width: 99%;
+height: 11%;
+
+}
+
+.title_list {
+position:absolute;
+top:2px;
+left: 2px;
+width:50%;
+height:5%;
+
+}
+
+.keyfigure_list{
+left: 2px;
+top: 30px;
+width:50%;
+height:5%;
+}
+
+.progress-value {
+	padding: 0px 5px;
+	line-height: 20px;
+	margin-left: 5px;
+	font-size: .8em;
+	color: #79C255;
+	height: 18px;
+	float: right;
+}
+
+.headertitle
+{
+
+letter-spacing: -2px;
+line-height: 1;
+text-shadow: 4px 3px 0px #E0F7F0, 7px 7px 0px rgba(0, 0, 0, 0.15);
+margin: 0 0 15px;
+
+color: #79C255;
+font-weight: bolder;
+}
